@@ -1,0 +1,573 @@
+{
+	"info": {
+		"_postman_id": "86b88c48-4432-4840-9ad2-b8ad2c0f73ff",
+		"name": "Holder Plus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11842066"
+	},
+	"item": [
+		{
+			"name": "Get all transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/transactions/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"transactions",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get all transactions",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/transactions/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"transactions",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 11 Apr 2023 20:55:29 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 11 Apr 2023 20:55:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"code\": 200,\n    \"message\": \"Transações encontradas.\",\n    \"data\": {\n        \"data\": [\n            {\n                \"transaction_id\": 1,\n                \"description\": \"Transação de teste atualizada\",\n                \"purchase_value\": \"120.00\",\n                \"sale_value\": \"185.00\",\n                \"initial_date\": \"2023-04-02 09:47:27\",\n                \"final_date\": \"2023-04-02 09:53:57\",\n                \"duration\": \"0 Hours 6 Minutes 30 Seconds\",\n                \"result\": 65\n            },\n            {\n                \"transaction_id\": 2,\n                \"description\": \"Transação de teste\",\n                \"purchase_value\": \"100.00\",\n                \"sale_value\": \"150.00\",\n                \"initial_date\": \"2023-04-10 10:13:35\",\n                \"final_date\": \"2023-04-11 14:35:24\",\n                \"duration\": \"4 Hours 21 Minutes 49 Seconds\",\n                \"result\": 50\n            },\n            {\n                \"transaction_id\": 3,\n                \"description\": \"Transação de teste\",\n                \"purchase_value\": \"100.00\",\n                \"sale_value\": \"150.00\",\n                \"initial_date\": \"2023-04-10 10:13:35\",\n                \"final_date\": \"2023-04-11 14:35:24\",\n                \"duration\": \"4 Hours 21 Minutes 49 Seconds\",\n                \"result\": 50\n            },\n            {\n                \"transaction_id\": 4,\n                \"description\": \"Transação de teste\",\n                \"purchase_value\": \"100.00\",\n                \"sale_value\": \"150.00\",\n                \"initial_date\": \"2023-04-10 10:13:35\",\n                \"final_date\": \"2023-04-11 14:35:24\",\n                \"duration\": \"4 Hours 21 Minutes 49 Seconds\",\n                \"result\": 50\n            },\n            {\n                \"transaction_id\": 5,\n                \"description\": \"Transação de teste\",\n                \"purchase_value\": \"100.00\",\n                \"sale_value\": \"150.00\",\n                \"initial_date\": \"2023-04-10 10:13:35\",\n                \"final_date\": \"2023-04-11 14:35:24\",\n                \"duration\": \"4 Hours 21 Minutes 49 Seconds\",\n                \"result\": 50\n            },\n            {\n                \"transaction_id\": 6,\n                \"description\": \"Transação de teste\",\n                \"purchase_value\": \"100.00\",\n                \"sale_value\": \"150.00\",\n                \"initial_date\": \"2023-04-10 10:13:35\",\n                \"final_date\": \"2023-04-11 14:35:24\",\n                \"duration\": \"4 Hours 21 Minutes 49 Seconds\",\n                \"result\": 50\n            },\n            {\n                \"transaction_id\": 7,\n                \"description\": \"Transação de teste\",\n                \"purchase_value\": \"100.00\",\n                \"sale_value\": \"150.00\",\n                \"initial_date\": \"2023-04-10 10:13:35\",\n                \"final_date\": \"2023-04-11 14:35:24\",\n                \"duration\": \"4 Hours 21 Minutes 49 Seconds\",\n                \"result\": 50\n            },\n            {\n                \"transaction_id\": 8,\n                \"description\": \"Transação de teste\",\n                \"purchase_value\": \"100.00\",\n                \"sale_value\": \"150.00\",\n                \"initial_date\": \"2023-04-10 10:13:35\",\n                \"final_date\": \"2023-04-11 14:35:24\",\n                \"duration\": \"4 Hours 21 Minutes 49 Seconds\",\n                \"result\": 50\n            },\n            {\n                \"transaction_id\": 9,\n                \"description\": \"Transação de teste\",\n                \"purchase_value\": \"100.00\",\n                \"sale_value\": \"150.00\",\n                \"initial_date\": \"2023-04-10 10:13:35\",\n                \"final_date\": \"2023-04-11 14:35:24\",\n                \"duration\": \"4 Hours 21 Minutes 49 Seconds\",\n                \"result\": 50\n            },\n            {\n                \"transaction_id\": 10,\n                \"description\": \"Transação de teste\",\n                \"purchase_value\": \"100.00\",\n                \"sale_value\": \"150.00\",\n                \"initial_date\": \"2023-04-10 10:13:35\",\n                \"final_date\": \"2023-04-11 14:35:24\",\n                \"duration\": \"4 Hours 21 Minutes 49 Seconds\",\n                \"result\": 50\n            },\n            {\n                \"transaction_id\": 11,\n                \"description\": \"Transação de teste\",\n                \"purchase_value\": \"100.00\",\n                \"sale_value\": \"150.00\",\n                \"initial_date\": \"2023-04-10 10:13:35\",\n                \"final_date\": \"2023-04-11 14:35:24\",\n                \"duration\": \"4 Hours 21 Minutes 49 Seconds\",\n                \"result\": 50\n            },\n            {\n                \"transaction_id\": 12,\n                \"description\": \"Transação de teste\",\n                \"purchase_value\": \"100.00\",\n                \"sale_value\": \"150.00\",\n                \"initial_date\": \"2023-04-10 10:13:35\",\n                \"final_date\": \"2023-04-11 14:35:24\",\n                \"duration\": \"4 Hours 21 Minutes 49 Seconds\",\n                \"result\": 50\n            },\n            {\n                \"transaction_id\": 13,\n                \"description\": \"Transação de teste\",\n                \"purchase_value\": \"100.00\",\n                \"sale_value\": \"150.00\",\n                \"initial_date\": \"2023-04-10 10:13:35\",\n                \"final_date\": \"2023-04-11 14:35:24\",\n                \"duration\": \"4 Hours 21 Minutes 49 Seconds\",\n                \"result\": 50\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get one transaction with ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/transactions/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"transactions",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get one transaction with ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/transactions/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"transactions",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 11 Apr 2023 20:55:37 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 11 Apr 2023 20:55:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"code\": 200,\n    \"message\": \"Transação encontrada.\",\n    \"data\": {\n        \"transaction_id\": 1,\n        \"description\": \"Transação de teste atualizada\",\n        \"purchase_value\": \"120.00\",\n        \"sale_value\": \"185.00\",\n        \"initial_date\": \"2023-04-02 09:47:27\",\n        \"final_date\": \"2023-04-02 09:53:57\",\n        \"duration\": \"0 Hours 6 Minutes 30 Seconds\",\n        \"result\": 65\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create a new transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "description",
+							"value": "Transação de teste",
+							"type": "text"
+						},
+						{
+							"key": "purchase_value",
+							"value": "100.00",
+							"type": "text"
+						},
+						{
+							"key": "sale_value",
+							"value": "150.00",
+							"type": "text"
+						},
+						{
+							"key": "initial_date",
+							"value": "2023-04-10 10:13:35",
+							"type": "text"
+						},
+						{
+							"key": "final_date",
+							"value": "2023-04-11 14:35:24",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"transactions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create a new transaction",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "description",
+									"value": "Transação de teste",
+									"type": "text"
+								},
+								{
+									"key": "purchase_value",
+									"value": "100.00",
+									"type": "text"
+								},
+								{
+									"key": "sale_value",
+									"value": "150.00",
+									"type": "text"
+								},
+								{
+									"key": "initial_date",
+									"value": "2023-04-10 10:13:35",
+									"type": "text"
+								},
+								{
+									"key": "final_date",
+									"value": "2023-04-11 14:35:24",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"transactions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 11 Apr 2023 20:55:43 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 11 Apr 2023 20:55:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"code\": 200,\n    \"message\": \"Transação realizada com sucesso.\",\n    \"data\": {\n        \"transaction_id\": 14,\n        \"description\": \"Transação de teste\",\n        \"purchase_value\": \"100.00\",\n        \"sale_value\": \"150.00\",\n        \"initial_date\": \"2023-04-10 10:13:35\",\n        \"final_date\": \"2023-04-11 14:35:24\",\n        \"duration\": \"4 Hours 21 Minutes 49 Seconds\",\n        \"result\": 50\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update one transaction with ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "description",
+							"value": "Transação de teste atualizada",
+							"type": "text"
+						},
+						{
+							"key": "purchase_value",
+							"value": "120.00",
+							"type": "text"
+						},
+						{
+							"key": "sale_value",
+							"value": "185.00",
+							"type": "text"
+						},
+						{
+							"key": "initial_date",
+							"value": "2023-04-02 09:47:27",
+							"type": "text"
+						},
+						{
+							"key": "final_date",
+							"value": "2023-04-02 09:53:57",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/transactions/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"transactions",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update one transaction with ID",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "Transação de teste atualizada",
+									"type": "text"
+								},
+								{
+									"key": "purchase_value",
+									"value": "120.00",
+									"type": "text"
+								},
+								{
+									"key": "sale_value",
+									"value": "185.00",
+									"type": "text"
+								},
+								{
+									"key": "initial_date",
+									"value": "2023-04-02 09:47:27",
+									"type": "text"
+								},
+								{
+									"key": "final_date",
+									"value": "2023-04-02 09:53:57",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/transactions/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"transactions",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 11 Apr 2023 20:55:48 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 11 Apr 2023 20:55:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"code\": 200,\n    \"message\": \"Transação realizada com sucesso.\",\n    \"data\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete one transaction with ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/transactions/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"transactions",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete one transaction with ID",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/transactions/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"transactions",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 11 Apr 2023 21:00:20 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 11 Apr 2023 21:00:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"code\": 200,\n    \"message\": \"Transação excluída com sucesso.\",\n    \"data\": true\n}"
+				}
+			]
+		}
+	]
+}
